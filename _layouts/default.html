@@ -87,40 +87,54 @@
 
   <header class="page-header" role="banner">
     <h1 class="project-name">
-      <a href="/" style="color: white">
+      <a href="{{ '/' | relative_url }}" style="color: white">
         {{ site.title | default: site.github.repository_name }}
       </a>
     </h1>
     <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-    <a href="/alertmanager" class="btn">Global configuration</a>
-    <a href="/rules" class="btn">Rules</a>
-    <a href="/sleep-peacefully" class="btn">Sleep peacefully</a>
+    <a href="{{ '/alertmanager' | relative_url  }}" class="btn">Global configuration</a>
+    <a href="{{ '/rules' | relative_url }}" class="btn">Rules</a>
+    <a href="{{ '/sleep-peacefully' | relative_url }}" class="btn">Sleep peacefully</a>
+    <a href="{{ '/blackbox-exporter' | relative_url }}" class="btn">Blackbox</a>
     <a href="https://github.com/samber/awesome-prometheus-alerts/blob/master/CONTRIBUTING.md" class="btn">
       Contribute on GitHub
     </a>
 
     <ul class="github-buttons-cta">
       <li>
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=samber&repo=awesome-prometheus-alerts&type=watch&count=true&v=2"
-          frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        <a href="https://github.com/samber/awesome-prometheus-alerts">
+          <img alt="GitHub Repo Watchers" src="https://img.shields.io/github/watchers/samber/awesome-prometheus-alerts?style=social">
+        </a>
       </li>
       <li>
-        <iframe src="https://ghbtns.com/github-btn.html?user=samber&repo=awesome-prometheus-alerts&type=star&count=true"
-          frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        <a href="https://github.com/samber/awesome-prometheus-alerts">
+          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/samber/awesome-prometheus-alerts?style=social">
+        </a>
       </li>
       <li>
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=samber&repo=awesome-prometheus-alerts&type=fork&count=true&v=2"
-          frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        <a href="https://github.com/samber/awesome-prometheus-alerts">
+          <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/samber/awesome-prometheus-alerts?style=social">
+        </a>
       </li>
       <li>
-        <a href="https://twitter.com/share?via=samber&related=samber&text=🚨 📊 Here is a collection of Awesome Prometheus Alerts&url=https://awesome-prometheus-alerts.grep.to"
+        <a href="https://twitter.com/share?via=samuelberthe&related=samuelberthe&text=🚨 📊 Here is a collection of Awesome Prometheus Alerts&url=https://samber.github.io/awesome-prometheus-alerts"
           class="fa fa-twitter" target="_blank"></a>
       </li>
       <li>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://awesome-prometheus-alerts.grep.to"
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://samber.github.io/awesome-prometheus-alerts/"
           class="fa fa-linkedin" target="_blank"></a>
+      </li>
+    </ul>
+
+
+    <ul id="sponsoring">
+      <li>
+        Kindly supported by&nbsp; 👉
+      </li>
+      <li>
+        <a href="https://betterstack.com/">
+          <img width="" src="assets/sponsor-betterstack.png" />
+        </a>
       </li>
     </ul>
   </header>
@@ -145,7 +159,7 @@
         s['ScreebObject']=r;s[r]=s[r]||function(){(s[r].q=s[r].q||[]).push(arguments)};
         b=c.createElement('script');b.type='text/javascript';
         b.id=r;b.src=ee;b.async=1;c.getElementsByTagName("head")[0].appendChild(b);
-    }(window,document,'$screeb','https://t.screeb.app/tag.js'));
+    }(window,document,'$screeb','https://t2.screeb.app/tag.js'));
 
     $screeb('init', '232450e3-d3fe-4240-b543-649a5041a7db');
   </script>
